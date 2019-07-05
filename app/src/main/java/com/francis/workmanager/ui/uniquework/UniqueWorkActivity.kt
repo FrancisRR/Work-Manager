@@ -28,6 +28,8 @@ class UniqueWorkActivity : BaseActivity() {
         setContentView(R.layout.activity_chain)
         ButterKnife.bind(this)
         AppController.Dagger.inject(this)
+
+        supportActionBar?.setTitle("Unique work")
     }
 
 

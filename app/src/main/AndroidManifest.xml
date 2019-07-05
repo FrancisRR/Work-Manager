@@ -29,6 +29,9 @@
 
         <activity android:name=".ui.simplework.SimpleWorkActivity"
                   android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.periodicwork.PeriodicActivity"
+                  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

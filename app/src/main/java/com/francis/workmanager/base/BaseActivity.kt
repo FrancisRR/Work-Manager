@@ -11,6 +11,7 @@ open class BaseActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowHomeEnabled(true)
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

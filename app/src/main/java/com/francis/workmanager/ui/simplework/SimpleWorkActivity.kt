@@ -1,7 +1,6 @@
 package com.francis.workmanager.ui.simplework
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.work.Data
 import androidx.work.OneTimeWorkRequest
 import androidx.work.OneTimeWorkRequestBuilder
@@ -20,13 +19,14 @@ class SimpleWorkActivity : BaseActivity() {
     @set:Inject
     var workManager: WorkManager? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         ButterKnife.bind(this)
         AppController.Dagger.inject(this)
 
-
+        supportActionBar?.setTitle("Simple work")
 
 
         btWork1.setOnClickListener { simpleWork() }

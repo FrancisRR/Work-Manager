@@ -26,6 +26,7 @@ class ChainWorkActivity : BaseActivity() {
         setContentView(R.layout.activity_chain_work)
         ButterKnife.bind(this)
         AppController.Dagger.inject(this)
+        supportActionBar?.setTitle("Chain work")
 
         btChain.setOnClickListener { chainWork() }
     }
